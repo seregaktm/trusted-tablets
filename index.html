@@ -3,51 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Simple Landing Page</title>
     <style>
-        /* CSS for positioning the logo at the top corner */
-        #logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 9999; /* Ensure logo appears above other content */
+        /* CSS for full-screen image */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
         }
-        /* CSS for full-screen image on the left */
-        #full-screen-image {
-            width: 50%; /* Adjust as needed */
-            float: left;
+        body {
+            background-image: url('https://i-p.rmcdn.net/65e82c9ab014bc002277df4d/4659389/image-5f1b8fa7-e6ca-4797-a7e5-b1dcec9672ef.jpg?e=webp');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 20%; /* Adjust as needed */
         }
-        /* CSS for text on the full-screen image */
-        #image-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white; /* Adjust text color */
-            font-size: 24px; /* Adjust font size */
-            text-align: center;
-            z-index: 999; /* Ensure text appears above image */
-        }
-        /* CSS for text at the bottom */
-        #bottom-text {
-            margin-top: 50px; /* Adjust distance from bottom */
-            text-align: center;
+        /* CSS for text on the right side */
+        .text-on-image {
+            background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            padding: 20px;
+            max-width: 30%; /* Adjust as needed */
         }
     </style>
 </head>
 <body>
-    <!-- Logo at the top corner -->
-    <img id="logo" src="https://i0.wp.com/trusted-tablets-online.com/wp-content/uploads/2023/09/TT-logo-PNG.png?resize=300%2C58&ssl=1" alt="Logo">
-    
-    <!-- Full-screen image on the left -->
-    <div id="full-screen-image">
-        <img src="https://i-p.rmcdn.net/65e82c9ab014bc002277df4d/4659389/image-5f1b8fa7-e6ca-4797-a7e5-b1dcec9672ef.jpg?e=webp" alt="Full Screen Image">
-        <div id="image-text">Text on Image</div>
-    </div>
-    
-    <!-- Text at the bottom -->
-    <div id="bottom-text">
-        <p>Text at the bottom of the page</p>
+    <!-- Text on the right side of the image -->
+    <div class="text-on-image">
+        <h1>Welcome to Our Website</h1>
+        <p>This is a simple landing page.</p>
+        <!-- Add more text or content as needed -->
     </div>
 </body>
 </html>
