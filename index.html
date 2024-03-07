@@ -1,49 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Landing Page</title>
+    <title>TrustedTablets Pharmacie en ligne</title>
     <style>
-        /* CSS for full-screen image */
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100%;
         }
-        body {
-            background-image: url('https://i-p.rmcdn.net/65e82c9ab014bc002277df4d/4659389/image-5f1b8fa7-e6ca-4797-a7e5-b1dcec9672ef.jpg?e=webp');
-            background-size: cover;
-            background-position: center;
+        .container {
             display: flex;
-            justify-content: flex-start;
+            flex-direction: column;
             align-items: center;
-            padding-left: 20%; /* Adjust as needed */
+            justify-content: center;
+            background-color: #f0f0f0;
         }
-        /* CSS for text on the left side */
-        .text-on-image {
-            background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
-            padding: 20px;
-            max-width: 30%; /* Adjust as needed */
-        }
-        /* CSS for the logo */
-        #logo {
+        .logo {
             position: absolute;
             top: 20px;
             left: 20px;
-            z-index: 9999; /* Ensure logo appears above other content */
+            width: 250px;
+            z-index: 1;
+        }
+        .block {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 900px;
+            background-image: url('https://i-p.rmcdn.net/65e82c9ab014bc002277df4d/4659389/image-5f1b8fa7-e6ca-4797-a7e5-b1dcec9672ef.jpg?e=webp');
+            background-size: cover;
+            background-position: left;
+            position: relative;
+            z-index: 0;
+        }
+        .block-content {
+            width: 65%;
+            padding: 35px;
+            z-index: 1;
+        }
+        .block-content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .block-content p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 2px solid #000000;
+            color: #000000;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background-color: #bfe099;
+            color: #000000;
+        }
+        .second-block {
+            background-color: #fff;
+            background-image: none; /* Remove any background image */
         }
     </style>
 </head>
 <body>
-    <!-- Logo in the top left corner -->
-    <img id="logo" src="https://i0.wp.com/trusted-tablets-online.com/wp-content/uploads/2023/09/TT-logo-PNG.png?resize=300%2C58&ssl=1" alt="Logo">
-    
-    <!-- Text on the left side of the image -->
-    <div class="text-on-image">
-        <h1>Welcome to Our Website</h1>
-        <p>This is a simple landing page.</p>
-        <!-- Add more text or content as needed -->
+    <div class="container">
+        <img class="logo" src="https://trusledtablets.com/templates/trustedtablets/imgs/ttlogo2.gif" alt="Logo">
+        <div class="block">
+            <div class="block-content">
+                <h2>TrustedTablets Pharmacie en ligne</h2>
+                <p>Votre source d’Euro Meds abordables.</p>
+				<p>Génériques de qualité pour la dysfonction érectile. Obtenez des résultats maintenant !</p>
+				<p></p>
+                <a class="btn" href="https://trustedtablets.online/">Choisissez un médicament</a>
+            </div>
+        </div>
+        <div class="block second-block">
+            <div class="block-content">
+                <h2>La quête de solutions alternatives à la dysfonction érectile gagne en popularité</h2>
+				<h3>Une tendance croissante vers des options de traitement alternatives</h3>
+                <p>La quête de solutions alternatives à la dysfonction érectile gagne en popularité alors qu'un nombre croissant d'hommes explorent diverses options de traitement. Confrontés aux effets secondaires potentiellement indésirables des thérapies conventionnelles, un nombre croissant d'individus se tournent vers les médicaments génériques pour optimiser leur santé sexuelle, bénéficiant ainsi de résultats efficaces dans la gestion de la dysfonction érectile. Découvrez une gamme de médicaments adaptés à votre traitement en visitant la pharmacie TrustedTablets.</p>
+                <p>Les hommes du monde entier sont de plus en plus enclins à explorer des alternatives aux traitements conventionnels pour la dysfonction érectile. Face aux effets secondaires potentiellement indésirables des thérapies traditionnelles, ils se tournent vers des solutions alternatives pour optimiser leur santé sexuelle et retrouver une vie intime épanouie.</p>
+                <h3>L'essor des médicaments génériques dans la gestion de la dysfonction érectile</h3>
+				<p>Parmi les alternatives les plus populaires se trouvent les médicaments génériques, qui offrent des résultats efficaces tout en minimisant les risques d'effets secondaires. Ces médicaments, dont l'efficacité est prouvée, permettent aux hommes de retrouver leur confiance et leur vitalité sexuelle sans compromettre leur bien-être général</p>
+				<h3>TrustedTablets : Une pharmacie de confiance pour des solutions efficaces</h3>
+				<p>Pour ceux qui recherchent des options de traitement fiables et sûres, TrustedTablets est la solution idéale. En tant que pharmacie en ligne de confiance, TrustedTablets propose une gamme complète de médicaments génériques pour la dysfonction érectile, tous provenant de fabricants réputés et respectant les normes de qualité les plus strictes.</p>
+				<h3>Une approche personnalisée pour des résultats optimaux</h3>
+				<p>Chez TrustedTablets, nous comprenons que chaque individu est unique et que les besoins en matière de traitement de la dysfonction érectile peuvent varier. C'est pourquoi nous offrons une approche personnalisée, guidant nos clients à travers notre sélection de médicaments et les aidant à trouver la solution qui leur convient le mieux.</p>
+				<h3>La commodité de l'achat en ligne</h3>
+				<p>En plus de proposer des solutions de traitement efficaces, TrustedTablets offre également la commodité de l'achat en ligne. Nos clients peuvent commander leurs médicaments en toute confidentialité et les recevoir directement à leur domicile, éliminant ainsi le besoin de se rendre en pharmacie et garantissant une expérience sans stress.</p>
+				<p>Face à la montée en puissance de la recherche de solutions alternatives à la dysfonction érectile, TrustedTablets se positionne comme un leader dans le domaine, offrant des médicaments génériques de qualité et un service personnalisé pour répondre aux besoins de chaque individu. Avec notre engagement envers l'excellence et notre dévouement à la satisfaction du client, nous sommes fiers d'être le choix de confiance pour ceux qui cherchent à améliorer leur santé sexuelle de manière sûre et efficace.</p>
+				
+            </div>
+        </div>
     </div>
 </body>
 </html>
